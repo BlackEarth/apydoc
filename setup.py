@@ -1,7 +1,7 @@
 
 config = {
   "name": "apydoc",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "API documentation generator",
   "url": "https://github.com/BlackEarth/bl",
   "author": "Sean Harrison",
@@ -14,7 +14,7 @@ config = {
     "Programming Language :: Python :: 3"
   ],
   "entry_points": {},
-  "install_requires": [],
+  "install_requires": ["bl"],
   "extras_require": {
     "dev": ['twine'],
     "test": ['nosetests', 'coverage']
@@ -22,7 +22,7 @@ config = {
   "package_data": {
     "bl": []
   },
-  "data_files": [],
+  "data_files": ['apydoc/*.TEMPLATE'],
   "scripts": []
 }
 
