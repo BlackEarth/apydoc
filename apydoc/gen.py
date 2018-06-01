@@ -1,7 +1,7 @@
 # apydoc.gen: generate apydocs
 
 import json, os, sys
-from bl.rglob import rglob
+from glob import glob
 
 if __name__ == "__main__":
     path = os.path.realpath(sys.argv[1])
@@ -15,6 +15,6 @@ if __name__ == "__main__":
     pys = []
     for src in j["srcs"]:
         src_path = os.path.realpath(os.path.join(path, src))
-        pys += rglob(src_path, "*.py")
+        pys += glob(os.path.join(src_path, "**", "*.py"))
     for py in pys:
         print(py)
