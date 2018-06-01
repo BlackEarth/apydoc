@@ -1,6 +1,6 @@
 # apydoc
 
-API documentation generator. See [docs](docs/index)
+API documentation generator. See [docs](docs/index.md)
 ```bash
 $ pip install apydoc
 ```
